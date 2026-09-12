@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Tasksearn</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: #f5f7fb;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .box {
+      background: white;
+      width: 90%;
+      max-width: 400px;
+      padding: 30px;
+      border-radius: 18px;
+      box-shadow: 0 4px 20px rgba(0,0,0,.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #6c4df6;
+    }
+
+    input {
+      width: 100%;
+      padding: 14px;
+      margin-top: 12px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      font-size: 16px;
+    }
+
+    button {
+      width: 100%;
+      padding: 14px;
+      margin-top: 18px;
+      border: 0;
+      border-radius: 10px;
+      background: #6c4df6;
+      color: white;
+      font-size: 16px;
+    }
+
+    .note {
+      text-align: center;
+      color: #777;
+      margin-top: 15px;
+      font-size: 13px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="box">
+    <h1>Tasksearn</h1>
+
+    <input type="text" placeholder="Username">
+
+    <input type="password" placeholder="Password">
+
+    <button onclick="login()">Login</button>
+
+    <p class="note">
+      Prototype only — don't enter a real password.
+    </p>
+  </div>
+
+  <script>
+    function login() {
+      alert("Demo login successful!");
+      window.location.href = "index.html";
+    }
+  </script>
+
+</body>
+</html>

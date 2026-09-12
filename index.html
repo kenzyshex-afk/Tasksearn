@@ -87,7 +87,10 @@
     }
   </style>
 </head>
-
+<script>
+let points = Number(localStorage.getItem("points")) || 0;
+document.getElementById("balance").innerText = points + " points";
+</script>
 <body>
 
   <header>
@@ -99,7 +102,7 @@
 
     <div class="balance">
       <p>Your Balance</p>
-      <h2>₱0.00</h2>
+      <h2 id="balance">0 points</h2>
     </div>
 
     <div class="task">

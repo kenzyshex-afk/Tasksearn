@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tasks - Tasksearn</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f7fb;
+    }
+
+    header {
+      background: #6c4df6;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .task {
+      background: white;
+      padding: 20px;
+      margin-bottom: 15px;
+      border-radius: 15px;
+      box-shadow: 0 3px 10px rgba(0,0,0,.08);
+    }
+
+    .task h2 {
+      margin-top: 0;
+    }
+
+    .reward {
+      color: #6c4df6;
+      font-weight: bold;
+    }
+
+    button {
+      width: 100%;
+      padding: 13px;
+      margin-top: 12px;
+      border: none;
+      border-radius: 10px;
+      background: #6c4df6;
+      color: white;
+      font-size: 16px;
+    }
+
+    .back {
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+      color: #6c4df6;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>📋 Tasksearn</h1>
+  <p>Available Tasks</p>
+</header>
+
+<div class="container">
+
+  <div class="task">
+    <h2>📱 Daily Check-in</h2>
+    <p>Complete the daily check-in.</p>
+    <p class="reward">Reward: 10 points</p>
+    <button onclick="completeTask(this)">Complete Task</button>
+  </div>
+
+  <div class="task">
+    <h2>📝 Quick Survey</h2>
+    <p>Complete an available survey.</p>
+    <p class="reward">Reward: 25 points</p>
+    <button onclick="completeTask(this)">Complete Task</button>
+  </div>
+
+  <div class="task">
+    <h2>🎯 Bonus Task</h2>
+    <p>Complete this demo task.</p>
+    <p class="reward">Reward: 50 points</p>
+    <button onclick="completeTask(this)">Complete Task</button>
+  </div>
+
+  <a class="back" href="index.html">← Back to Dashboard</a>
+
+</div>
+
+<script>
+function completeTask(button) {
+  button.textContent = "Task Completed ✓";
+  button.disabled = true;
+  alert("Demo task completed! Points will be connected to the account system later.");
+}
+</script>
+
+</body>
+                      </html>

@@ -98,10 +98,16 @@
 </div>
 
 <script>
-function completeTask(button) {
-  button.textContent = "Task Completed ✓";
-  button.disabled = true;
-  alert("Demo task completed! Points will be connected to the account system later.");
+let points = Number(localStorage.getItem("points")) || 0;
+
+function done(x, reward){
+  points += reward;
+  localStorage.setItem("points", points);
+
+  x.innerText = "Completed ✓";
+  x.disabled = true;
+
+  alert("Task completed! +" + reward + " points");
 }
 </script>
 
